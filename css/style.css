@@ -1,0 +1,75 @@
+body{
+    font-family: Outfit;
+}
+.graphBox{
+    width:100%;
+    height: 100vh;
+    background-color:rgb(163, 165, 42);
+}
+
+.graph{
+    width:100%;
+    height: 100vh;
+    background-color:rgba(56, 56, 56, 0.082);
+}
+
+#fileInput,button {
+  font-family: Outfit;
+}
+
+#encoderInput,#decoderInput, #Code, #TableCode, #DeCode{
+    width: 98%;
+    height: 30%;
+    font-family: Outfit;
+    
+}
+
+#TableCode, #DeCode{
+    min-height: 100px;
+}
+#TableCode, #Code, DeCode{
+    font-size: 20px;
+}
+
+#DeCode{
+    font-size: 15px;
+}
+
+.main-container{
+    width:100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 3fr;
+    column-gap: 30px;
+    row-gap: 10px;
+}
+
+.container-child{
+    width: inherit;
+    height: inherit;
+    /* background-color:aqua; */
+}
+
+.title{
+    grid-column: 1 / span 2;
+    height:100%;
+
+}
+.title > h1{
+    text-align: center;
+    font-family: Outfit;
+    font-weight: 100px;
+    font-size: 3rem;
+    margin:0px;
+    padding:0px;
+}
+
+#charCodesInOrder{
+    word-wrap: break-word;
+    max-width: 400px;
+}
+
+textarea{
+    max-width: 450px;
+}

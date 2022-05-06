@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Код Хаффмана</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="container-child title">
+            <h1>Код Хаффмана</h1>
+        </div>
+        <div class = 'container-child'>
+            <h2>Кодирование</h2>
+            <input type="file" id="fileInput" class="input" multiple accepted=".txt">
+            <button id="downloadEncBtn">Скачать закодированный документ</button>
+            <br>
+            <textarea type="text" id="encoderInput" placeholder="Ввод" autofocus></textarea>
+            
+            <div id="table" style="display: none;">
+                
+                <h3 >Код:</h3>
+                <textarea id="Code"type="text" readonly style="border: none;display: none;"></textarea>
+                <h3>Таблица кодов:</h3>
+                <textarea id="TableCode"type="text" readonly style="border: none;"></textarea>
+                <h3 id="decoderOutput"><br></h3>
+                <textarea id="DeCode"type="text" readonly style="border: none;display:none"></textarea>
+
+            </div>
+            <div>
+                <h2>Декодирование</h2>
+                <input type="file" id="decoderFileInput" multiple accepted=".txt"></input>
+                <button id="downloadDecBtn">Скачать расшифрованный документ</button>
+            </div>
+            <textarea type="text" id="decoderInput" placeholder="Ввод бинарного кода"></textarea>
+            
+            
+        </div>
+        
+        <div class="container-child graph" id="tree"></div>
+        
+    </div>
+   
+
+
+
+
+    <script src="./javascript/two.js"></script>
+    <!-- <script src="https://d3js.org/d3.v7.min.js"></script> -->
+    <script src="./javascript/d3js.js"></script>
+    <script src="./javascript/huffmanNode.js"></script>
+    <script src="./javascript/draw.js"></script>
+    <script src="./javascript/draw2.js"></script>
+    <script src="./javascript/updater.js"></script>
+    <script src="./javascript/index.js"></script>
+</body>
+</html>
